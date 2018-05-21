@@ -26,7 +26,6 @@
   "scripts": {
     "server": "nodemon ./server/server.js --exec babel-node --presets es2015,stage-2",
     "start": "webpack --watch",
-    "build": "webpack && babel ./client -d extra --presets es2015,stage-2",
     "postinstall": "webpack"
   },
   "devDependencies": {
