@@ -30,8 +30,8 @@
     "webpack-cli": "^2.1.3"
   },
   "scripts": {
-    "server": "nodemon ./server/server.js --exec babel-node --presets es2015,stage-2",
-    "start": "webpack -d --watch",
+    "start": "nodemon ./server/server.js --exec babel-node --presets es2015,stage-2",
+    "dev": "webpack -d --watch",
     "postinstall": "webpack"
   },
   "devDependencies": {
