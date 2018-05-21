@@ -22,7 +22,7 @@ export const fetchLocation = (data, callback) => {
         return response[0] ?
         fetchWeather(response[0]['woeid'], callback):
         //otherwise return an error
-        callback("Sorry please Enter a Valid City");
+        callback("Sorry please Enter a Valid City.");
 	});
 };
 

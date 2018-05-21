@@ -23,7 +23,7 @@ class WeatherShow extends Component {
       );
     } else {
       return (
-        <div>
+        <div className="errors">
           {this.props.weather}
         </div>
       );

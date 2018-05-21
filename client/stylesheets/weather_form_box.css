@@ -54,3 +54,12 @@
   background-color: #98D2EB;
   color: #fff;
 }
+
+.errors{
+  line-height: 13px;
+  color: #C12323;
+  margin-top: 5%;
+  background-color: #FFEDED;
+  padding: 10px;
+  border-radius: 5px;
+}
