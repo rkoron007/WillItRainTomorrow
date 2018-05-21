@@ -1,3 +1,7 @@
-.weather-form-box{
-  display: flex;
+
+
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  overflow:hidden;
 }
