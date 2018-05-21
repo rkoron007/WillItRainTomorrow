@@ -22,9 +22,13 @@ class WeatherShow extends Component {
       return (
         <section>
           <h2>No rain, no worries! Everything looks dry tomorrow.</h2>
+          <img src="http://res.cloudinary.com/dkaolr6pg/image/upload/v1526922882/if_weather-01_1530392.png"
+            />
         </section>
       );
     } else {
+      // if we don't have a "true" or "false" from props
+      // that means we have an error and should display
       return (
         <div className="errors">
           {this.props.weather}
@@ -33,6 +37,7 @@ class WeatherShow extends Component {
     }
   }
   render() {
+    // make sure we have props before we display
     if (this.props.weather === ''){
       return null;
     }

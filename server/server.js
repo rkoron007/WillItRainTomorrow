@@ -6,8 +6,8 @@ const app = express();
 import path from 'path';
 
 import routes from './routes';
-// for routing our index.html
 
+// for routing our index.html
 app.use(express.static(path.resolve(__dirname + '../../client')));
 
 // connecting to our router

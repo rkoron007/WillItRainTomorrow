@@ -1,3 +1,6 @@
+
+// create a date string that is formulated correctly
+//(could be used for future date picking)
 export const createDate = () => {
   let date = new Date();
   //get day

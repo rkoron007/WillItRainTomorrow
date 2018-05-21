@@ -21,6 +21,8 @@ class WeatherForm extends Component {
   }
 
 
+  // prevent default submit and uses user input to make a request to the
+  // MetaWeather API. On success/failure the state is set with the results
   handleSubmit(e){
     e.preventDefault();
     fetchLocation(this.state.location, (weather) => {
@@ -28,13 +30,14 @@ class WeatherForm extends Component {
     });
   }
 
+
   render() {
     return (
       <div className="weather-form-box">
         <form className="weather-form" onSubmit={this.handleSubmit}>
           <h1 className="location-input-header">Going Somewhere?</h1>
           <h2 className="location-sub-header">
-            Let's find out if it's going to rain:
+            Enter a city find out if it's going to rain there tomorrow:
           </h2>
           <div className="input-box">
               <input className="location-input"
