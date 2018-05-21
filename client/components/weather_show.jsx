@@ -13,6 +13,9 @@ class WeatherShow extends Component {
         <section>
           <h2>Grab Your Umbrella! It'll be raining tomorrow.</h2>
           <ReactRain numDrops="200"/>
+          <img className="umbrella"
+            src="http://res.cloudinary.com/dkaolr6pg/image/upload/v1526917614/umbrella.png">
+          </img>
         </section>
       );
     } else if (this.props.weather === false) {

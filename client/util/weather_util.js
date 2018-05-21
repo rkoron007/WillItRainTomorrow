@@ -52,8 +52,8 @@ export const fetchWeather = (woeid, callback) => {
 export const isRaining = (weather) => {
   let tomorrow = weather['consolidated_weather'][0];
   let abbreviation = tomorrow['weather_state_abbr'];
-
-  const rains = ['h','t','ht','lt','s', 'lr'];
+  console.log(abbreviation);
+  const rains = ['h','t','hr','lr','s','sl'];
   if (rains.includes(abbreviation)) {
     return true;
   }

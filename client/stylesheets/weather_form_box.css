@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 10%;
   height: 500px;
   font-family: 'Nanum Gothic', sans-serif;
 }
@@ -26,6 +27,7 @@
 }
 
 .location-input{
+  font-family: 'Nanum Gothic', sans-serif;
   line-height: 16px;
   color: #333;
   font-size: 14px;
@@ -33,21 +35,21 @@
   border-left: 1px solid #E1E4DF;
   border-bottom: 1px solid #E1E4DF;
   border-top: 1px solid #E1E4DF;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px;
   width: 50%;
 }
 
 .request-button{
+  font-family: 'Nanum Gothic', sans-serif;
   line-height: 16px;
   font-size: 15px;
-  background-color: #E1F2FE;
+  background-color: #B2B1CF;
   border: 1px solid #98D2EB;
   padding: 10px;
   line-height: 15px;
   margin-top: 13px;
   border-radius: 3px;
-  width: 50%;
+  width: 51.5%;
 }
 
 .request-button:hover{
@@ -55,6 +57,9 @@
   color: #fff;
 }
 
+.umbrella{
+  margin-top: 100px;
+}
 .errors{
   line-height: 13px;
   color: #C12323;
