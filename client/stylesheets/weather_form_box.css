@@ -11,7 +11,7 @@
 
 }
 
-.location-input-header{
+.title{
   font-size: 30px;
 }
 
@@ -24,6 +24,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.rain{
+  margin-top: 4%;
 }
 
 .location-input{

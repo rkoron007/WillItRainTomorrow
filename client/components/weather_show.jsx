@@ -11,7 +11,7 @@ class WeatherShow extends Component {
     if (this.props.weather === true) {
       return (
         <section>
-          <h2>Grab Your Umbrella! It'll be raining tomorrow.</h2>
+          <h2 className="rain">Grab Your Umbrella! It'll be raining tomorrow.</h2>
           <ReactRain numDrops="200"/>
           <img className="umbrella"
             src="http://res.cloudinary.com/dkaolr6pg/image/upload/v1526917614/umbrella.png">
@@ -21,7 +21,7 @@ class WeatherShow extends Component {
     } else if (this.props.weather === false) {
       return (
         <section>
-          <h2>No rain, no worries! Everything looks dry tomorrow.</h2>
+          <h2 className="rain">No rain, no worries! Everything looks dry tomorrow.</h2>
           <img src="http://res.cloudinary.com/dkaolr6pg/image/upload/v1526922882/if_weather-01_1530392.png"
             />
         </section>

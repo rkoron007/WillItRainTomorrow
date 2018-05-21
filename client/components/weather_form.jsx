@@ -35,7 +35,7 @@ class WeatherForm extends Component {
     return (
       <div className="weather-form-box">
         <form className="weather-form" onSubmit={this.handleSubmit}>
-          <h1 className="location-input-header">Going Somewhere?</h1>
+          <h1 className="title">Rose Koron's Will It Rain Tomorrow?</h1>
           <h2 className="location-sub-header">
             Enter a city find out if it's going to rain there tomorrow:
           </h2>
