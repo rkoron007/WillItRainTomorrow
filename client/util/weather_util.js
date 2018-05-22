@@ -10,20 +10,20 @@ export const fetchLocation = (data, callback) => {
       },
       credentials: 'same-origin',
     })
-    	.then((response) => {
-    		if (response.status >= 400) {
-    			throw new Error("Bad response from server");
-    		}
-    		return response.json();
-    	})
-    	.then((response) => {
-        // if we have a response then use that response's
-        // identifying woeid to look up the weather
-        return response[0] ?
-        fetchWeather(response[0]['woeid'], callback):
-        //otherwise return an error
-        callback("Please Enter a Valid City.");
-	});
+  	.then((response) => {
+  		if (response.status >= 400) {
+  			throw new Error("Bad response from server");
+  		}
+  		return response.json();
+  	})
+  	.then((response) => {
+      // if we have a response then use that response's
+      // identifying woeid to look up the weather
+      return response[0] ?
+      fetchWeather(response[0]['woeid'], callback):
+      //otherwise return an error
+      callback("Please Enter a Valid City.");
+    });
 };
 
 export const fetchWeather = (woeid, callback) => {

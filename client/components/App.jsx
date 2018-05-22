@@ -5,7 +5,7 @@ import WeatherShow from './weather_show';
 
 // basically just takes care of rendering the single form.
 const App = () => (
-    <WeatherForm />
+  <WeatherForm />
 );
 
 export default App;
