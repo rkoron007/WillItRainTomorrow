@@ -16,5 +16,4 @@ the next day. Rain always means preparation is necessary!
 
 ### Built Using:
 - Frontend: React
-- Backend: Express, Node, and Redis.
-
+- Backend: Express and Node
